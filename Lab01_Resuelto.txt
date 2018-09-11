@@ -1,0 +1,17 @@
+Ultima parte del laboratorio:
+De hecho, levantemos WampServer y ejecutemos la aplicación con el siguiente link:
+
+Foto: Imagenes/foto_laravel.jpg 
+
+OBSERVACIONES:
+
+- Hubo problemas al usar el xampp, ya que era una vercion mas antigua
+- En mi caso, use el Atom en vez del sublime text
+- Tambien se tubo que utilizar el wamp64 en vez del xampp
+
+CONCLUCIONES:
+
+- Podemos cambiar el puerto que queramos, en este caso utilizamos en 8080
+- En el caso del sublime text, es necesario instalar el package control
+- Con el transcurso del tiempo aprenderemos a utilizar laravel de la forma
+  mas eficiente y efectiva
