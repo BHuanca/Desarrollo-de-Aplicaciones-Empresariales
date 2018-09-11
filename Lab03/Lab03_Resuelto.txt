@@ -1,0 +1,12 @@
+OBSERVACIONES:
+
+- Laravel incluye una serie de métodos y clases que harán que la implementación del control de usuarios sea muy rápida y sencilla
+- La configuración del sistema de autenticación se puede encontrar en el fichero config/auth.php
+- Las vistas generalmente se encuentran en el directorio /resources/views de la carpeta principal de nuestro proyecto.
+
+CONCLUCIONES:
+
+- En este caso, no pusimos vistas realmente, sino solo que retornara un texto
+- Estamos trabajando con el modelo, vista y controlador
+- Los controladores trabajan con las peticiones get, post, put, etc. Estos nos sirven de gran utilidad al momento de sacar, insertar, borrar
+  datos que queremos
