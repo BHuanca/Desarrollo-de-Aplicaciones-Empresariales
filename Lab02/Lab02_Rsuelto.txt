@@ -1,0 +1,52 @@
+CREANDO UN DOMINIO LOCAL 
+1. Ingresamos a C:\Windows\System32\drivers\etc y abrimos el archivo hosts con el block de notas. 
+2. Agregamos un nombre de dominio con resolución de nuestro localhost:
+
+/// CAPTURA: imagenes/imagen2.jpg 
+
+3. Probemos el link creado en nuestro browser, debería abrirse la página de xamp o wamp. Sin embargo, la página a la que hemos sido re-direccionados, es la página principal de xamp o wamp, 
+4. Vamos modificar el archivo:  
+   a. En WAMPSERVER: C:\wamp64\bin\apache\apache2.4.17\conf\extra\httpd-vhosts.conf 
+   b. En XAMP: C:\xamp\apache\conf\extra\httpd-vhosts.conf
+
+/// CAPTURA: imagenes/imagen3.jpg
+
+CREANDO LA BASE DE DATOS PARA EL PROYECTO:
+
+/// CAPTURA: imagenes/imagen4.jpg
+
+CONFIGURANDO EL ENTORNO Y EL PROYECTO DE LARAVEL:
+
+/// CAPTURA: imagenes/imagen5.jpg
+
+/// CAPTURA: imagenes/imagen6.jpg
+
+CREANDO LOS MODELOS PARA EL PROYECTO:
+
+/// CAPTURA: imagenes/imagen7.jpg
+/// CAPTURA: imagenes/imagen8.jpg
+/// CAPTURA: imagenes/imagen9.jpg
+
+DEFINIENDO RELACIONES DE CARDINALIDAD ENTRE MODELOS:
+
+/// CAPTURA: imagenes/imagen10.jpg
+/// CAPTURA: imagenes/imagen11.jpg
+/// CAPTURA: imagenes/imagen12.jpg
+
+EJERCICIO:
+
+/// CAPTURA: imagenes/imagen13.jpg
+
+CREANDO LOS CONTROLADORES:
+
+/// CAPTURA: imagenes/imagen14.jpg 
+/// CAPTURA: imagenes/imagen15.jpg
+
+EJERCICIO
+Investigue y averigüe: ¿Cuál es la utilidad, características y funcionalidad de un TRAIT en PHP?
+
+Los traits (rasgos) son un mecanismo de reutilización de código en lenguajes de herencia simple, como PHP. El objetivo de un trait es el de reducir las limitaciones propias de la herencia
+simple permitiendo que los desarrolladores reutilicen a voluntad conjuntos de métodos sobre varias clases independientes y pertenecientes a clases jerárquicas distintas.
+
+/// CAPTURA de la parte 12:
+/// CAPTURA: Ejercicio_12.jpg
