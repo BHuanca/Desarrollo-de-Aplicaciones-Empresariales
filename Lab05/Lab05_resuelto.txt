@@ -19,4 +19,13 @@ QUEBRANDO LA SEGURIDAD DEL SISTEMA:
   - img6.jpg
 
 
+OBSERVACIONES:
+ - Para sacar informacion de un usuario autenticado, debemos importar la libreria Auth
+ - Debemos usar la funcion sizeof para verificar que los datos sean mayor a 0 y sabes si hay datos o no 
+ - Ademas en el request hemos indicado que retorne un valor verdadero o falso, para ver si tiene albumes o no
+
+CONCLUCIONES:
+ - Si intentamos modificar el id de un album, este nos votara un error 403
+ - En el postEditarPerfil, usamos la funcion save para actualizar al objeto usuario en la base de datos
+
 
