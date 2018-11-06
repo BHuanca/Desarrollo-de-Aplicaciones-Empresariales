@@ -10,8 +10,16 @@ CREANDO MENSAJES Y PÁGINAS DE EXCEPCIÓN PERSONALIZADAS:
 
 
 ACCESO Y VALIDACIÓN DE USUARIO:
-   TAREA: INVESTIGUE INYECCIÓN POR DEPENDENCIA EN LARAVEL. (por hacer)
- 	
+   TAREA: INVESTIGUE INYECCIÓN POR DEPENDENCIA EN LARAVEL.
+   La Inyección de Dependencias es un patrón de diseño orientado a objetos en el que se suministran objetos a una clase en lugar de ser la propia clase quien cree el objeto.
+   Estas tienen ventajas:
+    * Nuestro código se vuelve más modular y menos acoplado, ya que los submódulos no necesitan saber detalles de la implementación de otros en tu código.
+    * Gracias a esta modularidad es que podemos hacer tests unitarios más fácilmente, cada parte del programa se puede aislar porque para realizar pruebas no tenemos que proveer 
+      a nuestros programas de las referencias reales, sino que podemos fingirlas mediante mocks.
+    * La inyección de dependencias puede hacer que escribas código más rápido y te quita preocupaciones de tener que instanciar objetos tu mismo.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 	
+
    ¿Cuales fueron las credenciales utilizadas para acceder al sistema?
     - Podria ser cualquier usuario que creamos en la BD, ya que de ahi saca la informacion
 
@@ -26,3 +34,21 @@ CREANDO LA FUNCIONALIDAD PARA RECUPERAR LA CONTRASEÑA POR PARTE DEL USUARIO:
 
   2. Intente recuperar la contraseña con todos los datos correctos. ¿Qué sucede?
      - Nos redirige al inicio de nuevo pero con la constraseña ya cambiada
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBSERVACIONES:
+ - Al momento de crear los seeders, debemos ver su orden ya que primero van las tablas menos dependientes de otras
+ - Es recomendable actualizar el archivo que figuran los seeder, ya que estamos creando unos nuevos.
+ - Cuando creamos una contraseña, es recomendable encriptarlas con Bcrypt ya que es una excelente opción para contraseñas de hash 
+   porque su "factor de trabajo" es ajustable, lo que significa que el tiempo que lleva generar un hash puede aumentar a medida que aumenta la potencia del hardware. 
+ - Si queremos redireccionar a un request, debemos ponerle el link donde esta como: use Iluminate\Http\Request.
+ - Al crear un usuario, estos aparecen como la hora de creacion de otro pais, esto es recomendable hacerlo, ya que nosotros podemos modificar dicha hora y para que
+   un usuario que no sea de Peru no tenga inconvenientes.
+
+CONCLUCIONES:
+ - Creamos Seeders en Laravel.
+ - Logramos la validación de Usuario.
+ - Habilitamos la funcionalidad de recuperar contraseña por parte del usuario.  
+ - Se pudo solucionar errores comunes que cometimos
