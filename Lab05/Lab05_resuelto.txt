@@ -1,0 +1,22 @@
+CREANDO LA FUNCIONALIDAD: ACTUALIZAR PERFIL DE USUARIO 
+ Parte 7:
+  - img1.jpg
+ Parte 8:
+  - img2.jpg
+ Parte 14:
+  - img3.jpg
+
+CREANDO LA FUNCIONALIDAD DE MOSTRAR ÁLBUMES
+ Parte 6:
+  - img4.jpg
+
+CREANDO LA FUNCIONALIDAD PARA MOSTRAR FOTOS
+ Parte 8:	
+  - img5.jpg
+
+QUEBRANDO LA SEGURIDAD DEL SISTEMA:
+ Parte 3:
+  - img6.jpg
+
+
+
