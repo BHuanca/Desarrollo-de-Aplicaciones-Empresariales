@@ -1,0 +1,28 @@
+CREANDO SEEDERS:
+   - Punto 7:
+   Captura: imagen5.jpg
+   - Punto 8:
+   Captura: imagen6.jpg
+   - Explore la base de datos y responda: ¿Qué sucedió?
+     -> Basicamente, el codigo que hicimos creo los 50 usuarios, 926 fotos y 388 albumes en la base de datos
+
+CREANDO MENSAJES Y PÁGINAS DE EXCEPCIÓN PERSONALIZADAS:
+
+
+ACCESO Y VALIDACIÓN DE USUARIO:
+   TAREA: INVESTIGUE INYECCIÓN POR DEPENDENCIA EN LARAVEL. (por hacer)
+ 	
+   ¿Cuales fueron las credenciales utilizadas para acceder al sistema?
+    - Podria ser cualquier usuario que creamos en la BD, ya que de ahi saca la informacion
+
+CREANDO LA FUNCIONALIDAD PARA RECUPERAR LA CONTRASEÑA POR PARTE DEL USUARIO:
+
+   ¿Cuál sería el proceso de crear un Request de nombre: “RecuperarContrasenaRequest”?
+   - Escribimos el siguiente comando:
+     * php artisan make:request RecuperarContrasenaRequest 
+
+  1. Intente recuperar la contraseña con un correo válido, dos contraseñas correctas (con más de 5 caracteres), pero con pregunta y/o respuesta equivocada. Anote los resultados
+     - Nos dice que la pregunta y/o respuesta ingresadas no coinciden.
+
+  2. Intente recuperar la contraseña con todos los datos correctos. ¿Qué sucede?
+     - Nos redirige al inicio de nuevo pero con la constraseña ya cambiada
