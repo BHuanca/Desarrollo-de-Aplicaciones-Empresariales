@@ -1,0 +1,69 @@
+CREANDO LA FUNCIONALIDAD PARA EDITAR UN ÁLBUM
+Parte 5.1:
+ * ¿Qué hicimos al agregar esa línea?
+    - Le estamos diciendo que al hacer click en el boton Editar Album, nos rediriga a la pagina actualizar-album
+      con el objeto album y el id de este.
+
+Parte 9.1:
+ * ¿De qué se encarga la función authorize() en este Request? 
+    - Basicamente de que valide si el id de album sea correcto y o no.
+
+Parte 12.1:
+ * ¿Qué se hizo en el código mostrado?
+    - Primero en el album, estamos buscando el id de album, luego los otros parametros estamos jalando de lo que puso
+      en las casillas, luego si esto se completo, mandamos una llava llamada 'actualizado' con la descripcion 'El ambum se actualizo'
+
+Parte 13:
+ - img1.jpg
+
+
+CREANDO LA FUNCIONALIDAD PARA EDITAR UNA FOTO – MOVER Y COPIAR ARCHIVOS 
+
+Parte 15.1:
+ * Explique: ¿Qué se hizo en esta función?
+   - La funcion esta pidiendo una id, y en ella estamos buscando si ese id esta en foto, y si se encuentra
+     entonces retornara a la vista fotos.actualizar-foto, dandole a foto el id ingresasado
+
+Parte 22:
+ * Explique: ¿Qué estamos haciendo en las dos funciones principales de este Request? 
+
+   - En la primera estamos validando si el id foto existen en el album y en la segunda, estamos diciendo que
+     parametros debe ingresar el usuario para que se pueda ejecutar con normalidad     
+
+Parte 23:
+ * Explique Línea a línea lo que el código pretende hacer:
+   - Linea 60: Obtenemos el id de foto
+   - Linea 61: Obtenemos el nombre de la foto que recuperamos (id)
+   - Linea 62: Obtenemos la descripcion de la foto que recuperamos (id)
+   - Linea 63: Verificamos si el archivo esta presente en la solicitud
+   - Linea 64: Recuperamos ese archivo
+   - Linea 65: Indicamos la ruta que esta compuesta
+   - Linea 66: Ciframos el archivo, y luego le ponemos su extencion
+   - Linea 67: Obtenemos el directorio del archivo y luego copiamos eso al servidor
+   - Linea 68: Obtenemos la ruta anterior donde estaba la imagen
+   - Linea 69: Indicamos si existe la ruta
+   - Linea 71: Primero obtenemos la ruta absoluta de $rutaanterior, luego eliminamos todos esos archivos
+   - Linea 73: Asignamos a la foto su ruta y su nombre  
+   - Linea 75: Luego estamos haciendo uso de la funcion save() para que podamos actualizar esto en la base de datos
+   - Linea 76: Luego retornamos a la pagina fotos, pero enviando el id foto a album y la variable editada con la informacion de exito
+
+ * Desde la línea 69 (el bloque if), ¿por qué tiene que verificarse que la ruta exista?. Es necesario la verificación
+   - Porque si hemos eliminado esa misma foto antes, nos votaria error porque no existe tal ruta
+
+Parte 24:
+
+ * ¿Qué hace el código de la vista?
+    - Nos genera un alerta de que la foto se ha editado correctamente, esto sucede si enviamos correctamente editada 
+
+ Pruebe el código para verificar que las fotos pueden ser editadas.
+  - img2.jpg
+
+
+OBSERVACIONES
+
+ - Para poder modificar un objeto, debemos tener el id de ese objeto para que luego lo podamos redireccionar
+   a otra pagina donde modificarlo
+ - Al usar este objeto, debemos pasarlo a una variable parra que esta pueda ser leiada a nivel por un request 
+   u otra accion	
+
+CONCLUCIONES

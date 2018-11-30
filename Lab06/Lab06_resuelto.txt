@@ -1,0 +1,24 @@
+INSERTANDO ÁLBUMES EN LA BASE DE DATOS
+Parte 9:
+
+ - img1.jpg
+ - img1_1.jpg
+
+INSERTANDO FOTOS EN LA BASE DE DATOS 
+Parte 10:
+
+ - img2.jpg
+
+
+OBSERVACIONES:
+ - Podemos poner mensajes de que los datos fueron realizados, siempre y cuando al retorar el metodo post
+   le asignemos una llave como 'creado' y luego utilizar eso en el mensaje(si se recibio esa llave o no)
+ - Para cojer datos de vista en vista, debemos colocar un id al elemento que queremos recibir
+ - Siguiendo con la logica, un usuario - album - foto cada uno tiene su propio id para que podamos sacarlos
+   y ponerlos en el otro como: User1 - Album1 - Foto1, User2 - Album2 - Foto2
+
+CONCLUCIONES:
+ - Debemos cifrar un archivo, ya que si un usuario pone el mismo nombre en 2 fotos distintas
+   el nombre seria el mismo, pero al usar sha1 eso nunca se repetira
+ - Si nos ocaciono problemas al subir una imagen, solo quitar el comentario en extension...
+   para que asi obtener la informacion de los archivos que se manejan en las aplicaciones
