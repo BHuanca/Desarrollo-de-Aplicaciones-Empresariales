@@ -1,0 +1,48 @@
+CREANDO LA FUNCIONALIDAD PARA ELIMINAR ÁLBUMES Y FOTOS 
+ *¿Será necesario usar un método getEliminarAlbum? 
+  - No ya que solo es una funcionalidad, no vamos a crear un formulario ni nada parecido
+
+ *Pruebe el programa. Intente eliminar un álbum y verifique los resultados. 
+  - img1.jpg
+
+ *Explique: ¿Qué hacen las dos funciones importantes en este request?
+  - En la primera estamos validando si el id foto existen en el album y en la segunda estamos verificando
+    que si la id de foto existe
+
+ *Cuál es la finalidad de la función unlink, file_exists y realpath.
+   unlink: Nos permite borrar un archivo, ademas devuelve verdadero en caso de exito o false en caso de error
+   file_exists: Comprueba si existe un fichero o directorio
+   realpath: Devuelve el nombre de la ruta absoluta dada
+  
+ *Explique línea a línea la funcionalidad del código mostrado en la función.
+   Linea82: Obtenemos el id de foto
+   Linea83: Obtenemos el directorio actual de la ruta anterior donde estaba dicha foto
+   Linea85: Verificamos si existe el fichero
+   Linea86: Borramos ese fichero pero antes obtenemos su ruta absoluta
+   Linea88: Eliminamos la foto
+   Linea89: Redireccionamos a fotos, pasando el id a a album_id de foto y ademas pasamos una variable para que
+            en la vista se pueda mostrar el mensaje de la foto ha sido eliminada
+ *PRUEBE LA ELIMINACIÓN DE FOTOS 
+  - img2.jpg 
+
+OBSERVACIONES Y CONCLUCIONES:
+
+ - Para la eliminacion de albumes o fotos solo necesitamos el metodo post, ya que no es necesario hacer
+   formularios para eliminar un objeto
+ - En el request EliminarAlbumRequest en el metodo rules, solo necesitamos el id del album que queremos eliminar
+   por eso estamos verificando si esta dicha id
+ - Usamos la funcion delete() para que podamos eliminar tanto fotos como albumes, ademas esto solo requiere el id
+ - Dichos id los obtenemos creando un formulario
+ - Tenemos que verificar que nuestros datos estan, ya que si hubiera un error seria complicado arreglarlo, por ello
+   en la parte del archivo nosotros lo hacemos
+ - En el caso de eliminar una foto, tenemos que sacar su ruta absoluta y por eso usamos la funcion realpath()
+ 
+       
+    
+   
+
+   
+   
+   
+   
+     

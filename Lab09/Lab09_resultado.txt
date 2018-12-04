@@ -1,0 +1,48 @@
+MEJORANDO EL PROYECTO 
+
+ *Pruebe el código de modo que, los álbumes, se ordenen en columnas de 3 y las fotos en 4 columnas como máximo. 
+  - Album: img1.jpg
+  - Foto:  img2.jpg
+ *Anote los detalles más resaltantes del código anterior:
+  - En este caso nosotros anteriormente eliminabamos el album y todas las fotos que tenga, pero con el codigo
+    estamos eliminando foto por foto y luego eliminar el album en si
+  - En esta parte estamos creando un for para que elimine las fotos uno por una, primero obtenemos su ruta donde
+    se encuentra, luego verificamos si existe, obtenemos su ruta absoluta y lo eliminamos, una vez que no halla 
+    mas fotos que eliminar, recien se elimina el album
+
+COMANDO PARA RE-ALIMENTAR LA BASE DE DATOS 
+ - img3.jpg
+
+
+OBSERVACIONES Y CONCLUCIONES:
+
+ - En la parte de modificar mostrarAlbum nosotros creamos un for para que cada foto insertada se ordene por columna
+ - Cuando nosotros reiniciamos una bd tenemos que modificar las partes antiguas como el error que nos salio al refrescarlo
+   users cambiamos por usuarios
+ - En este laboratorio mejoramos la vista para que sea mas ordenada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
